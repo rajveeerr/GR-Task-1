@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp - GeekRoom</title>
+    <!-- <link href="./output.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="../public/logoImg.jpg">
+    <script src="https://kit.fontawesome.com/b6fe51c8e7.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+</head>
+<body>
+    <div id="popup-modal" class="popup-modal">
+        <p id="popup-message"></p>
+    </div>
+
+    <a class="logo" href="https://bento.me/rajveeerr" target="_blank">
+    <div class="header">
+         <img src="../public/logoImg.jpg">
+        <span class="name"><h1 class="section-title">Rajveer</h1></span><!--<p style="color: #7b90ff;">https://bento.me/rajveeerr</p>-->
+    </div></a>
+    
+    <div class="container">
+        <div class="left-section">
+            <!-- <h1>Welcome to Geek Room</h1> -->
+            <img class="illustration" src="../public/DrawKit Vector Illustration Fun & Playful Finn Character/PNG/DrawKit Vector Illustration Fun & Playful Finn Character (10).png">
+        </div>
+        <div class="right-section">
+            <div class="wrapper">
+                <h1>Register as a Geek Member!</h1>
+                <h2 class="sub-title">Join and collaborate with the greatest and coolest minds in MSIT.</h2>
+               
+                <form id="form" onsubmit="signup(event)">
+                    <input placeholder="Full Name"  id="signupName" type="text" required></input>
+                    <input placeholder="Email" type="email" id="signupEmail" required></input>
+                    
+                    <div class="password-field">
+                        <input type="password" placeholder="Password" id="signupPass" minlength="6" required>
+                        <span  onclick="passwordToggle('signup')" class="show-password-btn"><i class="fa-regular fa-eye"></i></span>
+                    </div>
+                        
+                    <p>Before registering read and agree with our <a href="./comingsoon.html">Terms of Service</a> and <a href="./comingsoon.html">Privacy Policy</a></p>
+                    <button>Register in Geek Room</button>
+                    <span class="guest" onclick="loginguest()">     Sign Up as Guest     </span>
+                    <p>Already a member? <a href="./login.html">Log In</a></p>
+                </form>
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>

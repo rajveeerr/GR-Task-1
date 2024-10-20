@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn - GeekRoom</title>
+    <!-- <link href="./output.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="../public/logoImg.jpg">
+    <script src="https://kit.fontawesome.com/b6fe51c8e7.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+
+    <div id="popup-modal" class="popup-modal">
+        <p id="popup-message"></p>
+    </div>
+
+    <a class="logo" href="https://bento.me/rajveeerr" target="_blank">
+    <div class="header">
+         <img src="../public/logoImg.jpg">
+        <span class="name"><h1 class="section-title">Rajveer</h1></span><!--<p style="color: #7b90ff;">https://bento.me/rajveeerr</p>-->
+    </div></a>
+    
+    <div class="container">
+        <div class="left-section">
+            <!-- <h1>Welcome to Geek Room</h1> -->
+            <img class="illustration" src="../public/DrawKit Vector Illustration Fun & Playful Finn Character/PNG/DrawKit Vector Illustration Fun & Playful Finn Character (2).png">
+        </div>
+        <div class="right-section">
+            <div class="wrapper">
+                <h1>Welcome to Geek Room!</h1>
+                <h2 class="sub-title">LogIn to meet MSIT's <em>coolest</em> minds.</h2>
+                <div class="oauth">
+                    <a href="#"><span class="google-btn"><img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000">Sign Up with Google</span></a>
+                    <p>Google login has not been set up yet. I apologize for the inconvenience as I'm currently in the learning process. I would also appreciate any feedback you have!</p>
+                </div>
+                <div class="divide">
+                    <div class="dotted-line"></div>
+                    <div class="or">or</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <form onsubmit="login(event)">
+                    <input placeholder="Email" type="email" id="loginEmail" required></input>
+                    <div class="password-field">
+                        <input type="password" placeholder="Password" id="loginPass" minlength="6" required>
+                        <span  onclick="passwordToggle('login')" class="show-password-btn"><i class="fa-regular fa-eye"></i></span>
+                    </div>
+                    <p>Forgot Password?? <a href="./comingsoon.html">Reset Password</a></p>
+                    <button>Log in to Geek Room</button>
+                    <span class="guest" onclick="loginguest()">  Sign Up as Guest  </span>
+                    <p>Haven't registered yet? <a href="./signup.html">Sign Up</a></p>
+                </form>
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
