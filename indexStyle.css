@@ -5,7 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 10rem 2rem 0 2rem;
-    background: url("../public/bg-pattern.png");
+    background: url("./public/bg-pattern.png");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;

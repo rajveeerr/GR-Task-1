@@ -34,7 +34,7 @@ body{
 .left-section{
     flex-grow: 1;
     /* max-width: 50%; */
-    background: url("../public/bg-pattern.png");
+    background: url("./public/bg-pattern.png");
     background-size: cover;
     
     background-position: top;
