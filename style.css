@@ -263,7 +263,7 @@ form button{
     border-radius: 30px;
     cursor: pointer;
     line-height: 1rem;
-    /* font-size: .825rem; */
+    font-size: .825rem;
 }
 .guest:hover{
     color: #fff;
