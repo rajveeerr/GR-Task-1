@@ -288,6 +288,13 @@ form button:hover{
     .header img{
         width: 2.4rem;
     }
+    .wrapper{
+        padding: 1rem;
+    }
+    .oauth a{
+        margin: 2rem 0 1rem 0;
+    }
+
   }
 
 
