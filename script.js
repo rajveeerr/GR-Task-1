@@ -160,6 +160,64 @@ function passwordToggle(signuporlogin){
     passInput.type==="password"?passInput.type="text":passInput.type="password"
 }
 
+addEventListener("DOMContentLoaded", (event) => {
+
+ 
+    let nameInput=document.getElementById(`signupName`)
+    let emailInput=document.getElementById(`signupEmail`)
+    let passwordInput=document.getElementById("signupPass")
+    
+    
+    let loginEmailInput=document.getElementById(`loginEmail`)
+    let loginPasswordInput=document.getElementById("loginPass")
+    
+    let arr=loginEmailInput===null?[nameInput,emailInput,passwordInput]:[loginPasswordInput,loginEmailInput]
+    
+    arr.forEach(element => {//two layers of validattion first one is doe by html and the second one by me
+        // console.log(element);
+        
+        element.addEventListener("focus",(event)=>{//upon clicking submit the form req property focuses inp where this logic adds error border
+            if(!event.target.checkValidity()){
+                event.target.classList.add('invalid');
+                event.target.reportValidity()
+                console.log("focused");
+            }
+            else{
+                event.target.classList.remove("invalid")
+            }
+        })
+        element.addEventListener("keyup",(event)=>{//upon clicking submit the form req property focuses inp where this logic adds error border
+            if(!event.target.checkValidity()){
+                event.target.classList.add('invalid');
+                event.target.reportValidity()
+                console.log("focused");
+            }
+            else{
+                event.target.classList.remove("invalid")
+            }
+        })
+
+        element.addEventListener("blur",(event)=>{
+
+            console.log("blur");
+            
+            if(!event.target.checkValidity()){
+                event.target.classList.add('invalid');
+                event.target.reportValidity()
+                console.log("focused");
+            }
+            else{
+                event.target.classList.remove("invalid")
+            }
+        })
+    });
+
+
+
+
+});
+
+
 function nameValidatiion(name) {
     const regex = /^[a-zA-Z ]+$/;
     return regex.test(name);

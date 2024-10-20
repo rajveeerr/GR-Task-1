@@ -200,10 +200,10 @@ form input{
     outline-color: #ff2626;
     border: 1px solid #ff2626;
 }
-input:invalid {
+/* input:invalid {
     outline-color: #ff2626;
     border: 1px solid #ff2626;
-}
+} */
 
 /* input:invalid:required {
     border: 1px solid #ff2626;
@@ -265,7 +265,7 @@ form button{
     border-radius: 30px;
     cursor: pointer;
     line-height: 1rem;
-    font-size: .825rem;
+    font-size: .8rem;
     width: 100%;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
