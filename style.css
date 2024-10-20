@@ -257,6 +257,7 @@ form button{
     background-color: #16af6c;
     border: none;
     width: 100%;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .guest{
@@ -266,10 +267,11 @@ form button{
     line-height: 1rem;
     font-size: .825rem;
     width: 100%;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 .guest:hover{
-    color: #fff;
-    background-color: #16af6c;
+    /* color: #fff; */
+    background-color: #dbffefba;
     
 }
 
